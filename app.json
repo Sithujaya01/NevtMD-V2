@@ -3,10 +3,19 @@
   "description": "MD WhatsApp Bot",
   "repository": "https://github.com/NevtBotz/NevtMD-V2",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "keywords": [
-    "bot",
-    "whatsapp",
-    "multi-device",
-    "whatsapp-bot"
-  ]
+  "keywords": ["idakin","sik"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
